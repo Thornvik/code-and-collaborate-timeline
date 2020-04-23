@@ -1,0 +1,31 @@
+:root {
+  --main-background-color: white;
+  --timeline-orange: #e56e2d;
+  --timeline-teal: #5bcaa9;
+  --timeline-yellow: #ebbf2f;
+  --timeline-purple: #a84d96;
+  --timeline-red: #e04f4d;
+  --main-blue: #009EDE;
+  --main-green: #60B88D;
+  --main-purple: #772C77;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
