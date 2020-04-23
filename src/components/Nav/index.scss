@@ -1,0 +1,14 @@
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--main-blue);
+}
+
+@media only screen and (orientation: landscape) {
+    .navBar {
+        height: 20vh;
+    }
+}

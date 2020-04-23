@@ -1,0 +1,11 @@
+.banner {
+    height: 30vh;
+    width: 100%;
+    background-color: var(--main-green);
+}
+
+@media only screen and (orientation: landscape) {
+    .banner {
+        height: 40vh;
+    }
+}

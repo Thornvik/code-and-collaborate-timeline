@@ -1,0 +1,40 @@
+.scrollWrapper {
+    height: 100%;
+}
+
+.bannerArea {
+    margin-top: 10vh;
+}
+
+.timeline {
+    &Wrapper {
+        display: flex;
+        height: 100%;
+    }
+    &Scroll {
+        background-color: blue ;
+        height: 100%;
+        width: 25vw;
+    }
+    &Display {
+        background-color: salmon;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (orientation: landscape){
+    .bannerArea {
+        margin-top: 20vh;
+    }
+    .timeline {
+        &Wrapper {
+            width: 100vw;
+            flex-direction: column;
+        }
+        &Scroll {
+            height: 25vh;
+            width: 100%;
+        }
+    }
+}
