@@ -181,13 +181,6 @@ const data = [
         "Tag": null,
         "Link": null
     },
-    {
-        "Id": "",
-        "Year": "",
-        "Text": "        ",
-        "Tag": null,
-        "Link": null
-    }
 ]
 
 export default data

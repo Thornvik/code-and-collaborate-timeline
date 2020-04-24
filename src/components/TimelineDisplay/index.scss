@@ -1,0 +1,11 @@
+.cardWrapper {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media only screen and (orientation: landscape) {
+    .cardWrapper {
+        min-width: 90vw;
+    }
+}
