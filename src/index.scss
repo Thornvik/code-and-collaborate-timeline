@@ -6,8 +6,10 @@
   --timeline-purple: #a84d96;
   --timeline-red: #e04f4d;
   --main-blue: #009EDE;
+  --main-blue-light: rgba(149, 204, 226,0.4);
   --main-green: #60B88D;
   --main-purple: #772C77;
+  --main-gray: rgba(88, 89, 91, 0.116);
 }
 
 *{
@@ -28,6 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-background-color);
+  overflow-x:hidden;
 }
 
 .mainWrapper {

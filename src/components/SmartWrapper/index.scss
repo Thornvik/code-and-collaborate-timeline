@@ -3,7 +3,7 @@
 }
 
 .bannerArea {
-    margin-top: 10vh;
+   margin-top:10vh;
 }
 
 .timeline {
@@ -31,7 +31,6 @@
     }
 
     &Display {
-        background-color: salmon;
         height: 100%;
         width: 100%;
         overflow-y: scroll;
@@ -42,7 +41,7 @@
 
 @media only screen and (orientation: landscape){
     .bannerArea {
-        margin-top: 20vh;
+        margin-top:20vh;
     }
     .timeline {
         &Wrapper {
@@ -51,7 +50,7 @@
         }
         &Scroll {
             overflow-x: scroll;
-            overflow-y: scroll;
+            overflow-y: hidden;
         }
         &Scroll ul{
             height: 25vh;
@@ -63,5 +62,11 @@
             overflow-y: hidden;
             overflow-x: scroll;
         }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .bannerArea {
+        margin-top: 10vh;
     }
 }

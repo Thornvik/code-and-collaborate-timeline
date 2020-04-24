@@ -4,11 +4,17 @@
     left: 0;
     width: 100vw;
     height: 10vh;
-    background-color: var(--main-blue);
+    background-color: #ffffff;
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape){
     .navBar {
         height: 20vh;
     }
+} 
+@media only screen and (min-width: 800px) {
+    .navBar {
+        height: 10vh;
+    }
 }
+

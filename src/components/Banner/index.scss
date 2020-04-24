@@ -1,7 +1,11 @@
 .banner {
     height: 30vh;
     width: 100%;
-    background-color: var(--main-green);
+    &Image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media only screen and (orientation: landscape) {
