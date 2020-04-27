@@ -10,6 +10,7 @@
     &Wrapper {
         display: flex;
         height: 100%;
+        overflow: hidden;
     }
     &Scroll {
         overflow-y: scroll;

@@ -4,8 +4,16 @@
     margin: 5px;
 }
 
+.textToggle{
+    display:none;
+}
+
 @media only screen and (orientation: landscape) {
     .cardWrapper {
         min-width: 90vw;
     }
+    .cardWrapperOverview {
+        min-width: 15vw;
+    }
+
 }
