@@ -27,7 +27,7 @@ function SmartWrapper() {
     // fetch("URL goes here") //here we call the api
     //     .then(res => res.json()) //here we convert the result from the api to json
     //     .then((result) => {
-    //         setTimelineData(result) //here we add the data to the state we made
+    //         setTimelineData(DataMaker(result)) //here we add the data to the state we made
     //     })
     setTimelineData(DataMaker(data));
   }, []);
