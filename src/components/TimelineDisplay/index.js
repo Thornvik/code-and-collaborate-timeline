@@ -1,23 +1,20 @@
 import React from 'react'
 import './index.scss'
 
-function Textloop(param) {
+function Textloop(param) { //a function for sorting through the data and placing it in the right place
     let output = []
     param.map(item => (
-        output.push(<p>{item.Tag}</p>, <p className={item.Tag}>{item.Text}</p>)
+        output.push(<a href={item.Link}><p className={item.Tag}>{item.Text}</p></a>)
     ))
 
     return output
 }
 
-function TimelineDisplay({ year, array, cardClass }) { //function for TimelineDisplay and give it props (year, id etc) to which we later will pass the relevant information
-
-    //console.log(year, array)
-
+function TimelineDisplay({ year, array, cardClass }) {
     return (
-        <div className="cardWrapper" id={array[0].Id} >
+        <div className="cardWrapper" id={year} >
             <h2>{year}</h2>
-            {Textloop(array)}
+            {Textloop(array)} {/* calling the function TextLoop with the data from the database as the param to sort throug it */}
         </div>
     );
 }

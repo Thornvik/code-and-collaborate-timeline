@@ -5,6 +5,21 @@
 
     & p {
         padding: 5px;
+        min-height: 10vh;
+        margin: 5px 0 5px 10%;
+    }
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.paragraph {
+    &Show {
+        display: block;
+    }
+    &Hide {
+        display: None;
     }
 }
 
