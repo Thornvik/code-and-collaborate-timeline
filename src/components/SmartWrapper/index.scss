@@ -1,0 +1,73 @@
+.scrollWrapper {
+    height: 100%;
+}
+
+.bannerArea {
+   margin-top:10vh;
+}
+
+.timeline {
+    &Wrapper {
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+    }
+    &Scroll {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    &Scroll ul{
+        height: 100%;
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+    }
+    &Scroll li {
+        margin: 0 5px 0 5px;
+        list-style: none;
+    }
+    &Scroll a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &Display {
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (orientation: landscape){
+    .bannerArea {
+        margin-top:20vh;
+    }
+    .timeline {
+        &Wrapper {
+            width: 100vw;
+            flex-direction: column;
+        }
+        &Scroll {
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        &Scroll ul{
+            height: 25vh;
+            width: 100%;
+            flex-direction: row;
+        }
+        &Display {
+            flex-direction: row;
+            overflow-y: hidden;
+            overflow-x: scroll;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .bannerArea {
+        margin-top: 10vh;
+    }
+}
