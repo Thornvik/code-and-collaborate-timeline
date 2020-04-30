@@ -17,12 +17,12 @@
     }
     &Scroll ul{
         height: 100%;
-        width: 25vw;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
     }
     &Scroll li {
-        margin: 0 5px 0 5px;
+        margin: 0 10px 0 10px;
         list-style: none;
     }
     &Scroll a {
@@ -54,7 +54,7 @@
             overflow-y: hidden;
         }
         &Scroll ul{
-            height: 25vh;
+            padding: 1rem;
             width: 100%;
             flex-direction: row;
         }

@@ -9,7 +9,7 @@ import Button from '../Button/index'
 
 function DataMaker(param) { //a function for sorting through the data from our data base
     let output = [];//empty array to fill with data
-    for (let i = 1950; i < 2050; i++) { //a loop that itteratets over numbers from 1950 to 2050
+    for (let i = 2050; i > 1949; i--) { //a loop that itteratets over numbers from 1950 to 2050
         const id = "#" + i //createing the id that we later use for scrolling to diffrent parts of the website
         const array = [i, param.filter((item) => parseInt(item.Year) === i), id]; //Creating an array to which we add the sorted data from our database and the id we created
         if (array[1][0]) {
