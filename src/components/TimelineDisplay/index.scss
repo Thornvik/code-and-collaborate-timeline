@@ -1,16 +1,24 @@
 .cardWrapper {
-    background-color: var(--main-blue-light);
-    padding: 5px;
+    padding: 3.4rem 5px 5px 5px;
     margin: 20px;
+    position: relative;
 
     & p {
         padding: 5px;
         min-height: 10vh;
-        margin: 5px 0 5px 10%;
+        margin: 5px 0 5px 7%;
     }
+
     & a {
         text-decoration: none;
         color: black;
+    }
+    & h2 {
+        top: 0;
+        font-size: 4rem;
+        color: var(--main-purple);
+        opacity: .7;
+        position: absolute;
     }
 }
 
@@ -50,6 +58,7 @@
 @media only screen and (orientation: landscape) {
     .cardWrapper {
         min-width: 90vw;
+        overflow-y: scroll;
     }
     .cardWrapperOverview {
         min-width: 15vw;

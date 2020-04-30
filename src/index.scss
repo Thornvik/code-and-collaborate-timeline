@@ -1,4 +1,5 @@
 :root {
+  font-size: 2vh;
   --main-background-color: white;
   --timeline-orange: #e56e2d;
   --timeline-teal: #5bcaa9;
@@ -10,7 +11,16 @@
   --main-green: #60B88D;
   --main-purple: #772C77;
   --main-gray: rgba(88, 89, 91, 0.116);
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&display=swap'); //Should be franklin gothic 
 }
+
+@media only screen and (orientation: landscape) {
+  :root {
+    font-size: 2vw;
+  }
+}
+
+
 
 *{
   box-sizing: border-box;
@@ -24,7 +34,7 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'Libre Franklin', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -37,3 +47,6 @@ body {
   height: 100vh;
 }
 
+p {
+  font-weight: 600;
+}
