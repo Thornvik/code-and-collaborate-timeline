@@ -1,10 +1,35 @@
 .banner {
     height: 30vh;
     width: 100%;
+    position: relative;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     &Image {
         object-fit: cover;
         height: 100%;
         width: 100%;
+    }
+    &Text {
+        position: absolute;
+        color:white;
+        height: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    & h1 {
+        font-size: 1.5rem;
+    }
+    & h1::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        display:block;
+        margin: 2% 0 7% 0;
+        border-bottom: 4px solid var(--ocean-blue);
     }
 }
 

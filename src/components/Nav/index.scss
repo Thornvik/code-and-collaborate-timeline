@@ -5,11 +5,24 @@
     width: 100vw;
     height: 10vh;
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -5;
+}
+
+img {
+    max-height: 80%;
+    width: 40vw;
+    object-fit: contain;
 }
 
 @media only screen and (orientation: landscape){
     .navBar {
         height: 20vh;
+    }
+    img {
+        width: 15vw;
     }
 } 
 @media only screen and (min-width: 800px) {

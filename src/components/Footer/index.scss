@@ -2,4 +2,17 @@
     height: 15vh;
     width: 100%;
     background-color: var(--main-gray);
+    &Logo {
+        height: 10vh;
+    }
+    &Text {
+        background-color: white;
+        height: 5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.75rem;
+        color: var(--main-blue);
+        text-decoration: underline;
+    }
 }

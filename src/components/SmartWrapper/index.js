@@ -42,16 +42,15 @@ function TimelineMaker(param, toggle) {
 
 function SmartWrapper() {
     const [timelineData, setTimelineData] = useState([]) //State to which we will add the data from the api
-    const [tagFilter, setTagFilter] = useState("all")
-    console.log(tagFilter)
+    // const [tagFilter, setTagFilter] = useState("all")
 
     useEffect(() => {
-        // fetch("URL goes here") //here we call the api
-        //     .then(res => res.json()) //here we convert the result from the api to json
-        //     .then((result) => {
-        //         setTimelineData(DataMaker(result)) //here we add the data to the state we made
-        //     })
-        setTimelineData(DataMaker(data));
+        fetch("https://sheet.best/api/sheets/f7baa3b6-10a3-45a8-b3d2-8465e28c1e89") //here we call the api
+            .then(res => res.json()) //here we convert the result from the api to json
+            .then((result) => {
+                setTimelineData(DataMaker(result)) //here we add the data to the state we made
+            })
+        // setTimelineData(DataMaker(data));
     }, []);
     return (
         <div className="scrollWrapper">
@@ -59,7 +58,8 @@ function SmartWrapper() {
             <div className="timelineWrapper">
                 <div className="timelineScroll"><ul>{TimelineMaker(timelineData, false)}</ul></div>
                 <div className="timelineDisplay">{TimelineMaker(timelineData, true)}</div> {/*Here we send the function TimelineMaker the data from the API, and we render aout the component TimelineDisplay */}
-                <div className="timelineButton"><Button tag={tagFilter} changeTag={(tag) => setTagFilter(tag)} /></div>
+                {/* <div className="timelineButton"><Button tag={tagFilter} changeTag={(tag) => setTagFilter(tag)} /></div>  */}
+                {/* Unimplementetd feature due to unforseen delays */}
             </div>
             <div className="footerArea"><Footer /></div>
         </div>

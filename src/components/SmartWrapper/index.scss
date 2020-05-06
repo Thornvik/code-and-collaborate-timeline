@@ -1,5 +1,6 @@
 .scrollWrapper {
     height: 100%;
+    background-color: white;
 }
 
 .bannerArea {
@@ -10,19 +11,20 @@
     &Wrapper {
         display: flex;
         overflow: hidden;
+        height: 60vh;
     }
     &Scroll {
-        overflow-y: scroll;
         overflow-x: hidden;
+        overflow-y: scroll;
+        max-height:100%;
     }
     &Scroll ul{
-        height: 100%;
         padding: 1rem;
         display: flex;
         flex-direction: column;
     }
     &Scroll li {
-        margin: 0 10px 0 10px;
+        margin: 10px;
         list-style: none;
     }
     &Scroll a {
@@ -48,6 +50,7 @@
         &Wrapper {
             width: 100vw;
             flex-direction: column;
+            height: 80vh;
         }
         &Scroll {
             overflow-x: scroll;
